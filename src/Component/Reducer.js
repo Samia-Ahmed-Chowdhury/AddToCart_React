@@ -33,6 +33,7 @@ export const reducer = (state, action) => {
                 if(curElem.quantity<5){
                     state.totalItem= state.totalItem+1;
                     state.totalAmount=curElem.price+state.totalAmount
+                    state.itemAmount=curElem.price*(curElem.quantity+1) 
                     // console.log(state.totalAmount)
              return { ...curElem, quantity: curElem.quantity + 1,itemAmount:curElem.price*(curElem.quantity+1) }
                 }
@@ -42,7 +43,7 @@ export const reducer = (state, action) => {
   }
             return curElem;
         });
-        return{...state,item:updatedCart,totalItem:state.totalItem,totalAmount:state.totalAmount}
+        return{...state,item:updatedCart,totalItem:state.totalItem,totalAmount:state.totalAmount,itemAmount:state.itemAmount}
     }
 
     if (action.type === "Decrement_Item") {

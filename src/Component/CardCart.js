@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CardCart({id,title,description,price,itemAmount,img,quantity,removeItem,IncrementItem,DecrementItem}) {
+function CardCart({id,title,description,itemAmount,img,quantity,removeItem,IncrementItem,DecrementItem}) {
     
     return (
         <>
