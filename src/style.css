@@ -234,7 +234,9 @@ header .left_side_nav p {
 .fa-minus {
     color: var(--icon-color);
 }
-
+.main_cart_section h3{
+    font-size: 2rem;
+}
 .main_cart_section h3 span {
     color: red;
 }
@@ -300,50 +302,12 @@ header .left_side_nav p {
         justify-content: flex-start;
     }
 
-    .price {
-        margin-top: -57px;
-        margin-right: 225px;
-    }
 
     .price h3::before {
         content: "Price: ";
+        font-size: 1.9rem;
     }
 
-    .remove_item {
-        margin-top: -50px;
-    }
-
-}
-
-@media only screen and (max-width: 700px) {
-    .price {
-        margin-top: -57px;
-        margin-right: 196px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .price {
-        margin-top: -57px;
-        margin-right: 163px;
-    }
-}
-
-@media only screen and (max-width:500px) {
-    .price {
-        margin-top: -57px;
-        margin-right: 119px;
-    }
-}
-
-@media only screen and (max-width:440px) {
-    .price {
-        margin-top: -57px;
-        margin-right: 90px;
-    }
-}
-
-@media only screen and (max-width:400px) {
     .add-minus-quantity {
         justify-content: center;
     }
@@ -359,6 +323,8 @@ header .left_side_nav p {
         margin-top: -27px;
     }
 }
+
+
 
 @media only screen and (max-width:340px) {
     html {
